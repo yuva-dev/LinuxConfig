@@ -6,7 +6,7 @@ sudo add-apt-repository ppa:danielrichter2007/grub-customizer -y
 sudo apt-get update
 sudo apt-get install grub-customizer -y
 
-# Install preload
+# Install preload (Need to check the effectiveness before applying)
 sudo apt-get install preload
 
 
