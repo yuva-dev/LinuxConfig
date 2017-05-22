@@ -1,0 +1,41 @@
+﻿# Set bios time as local time to avoid issues in dual boot.
+ timedatectl set-local-rtc 1
+
+# Install grub customizer
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer -y
+sudo apt-get update
+sudo apt-get install grub-customizer -y
+
+# Install preload
+sudo apt-get install preload
+
+
+# Touchpad noise cancelation set to 10 units and set time out to disable touchpad while typing to 100 ms
+
+
+# NOT RECOMMENDED: Changing swaappiness value: NOT RECOMMENDED to change the default value.
+# To improve the system performance allocate sufficient SWAP space for linux
+echo “vm.swappiness = 10” | sudo tee -a /etc/sysctl.conf
+
+# NOT RECOMMENDED: Reduce buff/cache usage of RAM
+echo 3 | sudo tee /proc/sys/vm/drop_caches
+
+
+# Android studio AVD manager unable to start due to memory card not found issue
+sudo apt-get install lib32stdc++6
+
+# If android emulator eats up lot of CPU disable hw.audioInput & hw.audioOutput
+hw.audioInput=no 
+hw.audioOutput=no
+# The file is found at ~/.android/avd/myAVD.avd/config.ini
+
+
+# To resolve the occasional write permission failure for windows DATA: install
+sudo apt-get install ntfs-config -y
+sudo ntfs-config
+# Enable read/write for the drives. 
+
+# Alternate option for above method: add
+UUID=9EAE111CAE10EE91   /media/yuva/DATA        ntfs-3g defaults,locale=en_IN   0       0
+# Option in /etc/fstab
+
