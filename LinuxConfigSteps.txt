@@ -39,3 +39,11 @@ sudo ntfs-config
 UUID=9EAE111CAE10EE91   /media/yuva/DATA        ntfs-3g defaults,locale=en_IN   0       0
 # Option in /etc/fstab
 
+# Poor fonts for GTk applications and libre-office in kde ?
+sudo apt-get install libreoffice-gtk3
+sudo apt-get install tango-icon-theme
+
+
+# Turn on Anti-aliasing for smooth fonts on libre office and other non-supported apps
+SystemSettings > fonts > use anti-aliasing(Enabled) > configure...
+Sub-pixel rendering type (RGB) > Hinting (Slight)
