@@ -43,4 +43,8 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo apt-get update
 sudo apt-get install code -y
 
+# GTK themes for KDE Desktop environment
+sudo apt-get install libreoffice-gtk3 -y
+sudo apt-get install tango-icon-theme -y
+
 
