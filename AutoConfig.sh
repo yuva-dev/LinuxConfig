@@ -1,4 +1,10 @@
 #! /bin/bash
+# JAVA 8 for android studio
+sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get update
+sudo apt-get install oracle-java8-installer -y
+sudo apt-get install oracle-java8-set-default -y
+
 # Set hardware time as local time
 timedatectl set-local-rtc 1
 
@@ -6,12 +12,6 @@ timedatectl set-local-rtc 1
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer -y
 sudo apt-get update
 sudo apt-get install grub-customizer -y
-
-# JAVA 8 for android studio
-sudo add-apt-repository ppa:webupd8team/java -y
-sudo apt-get update
-sudo apt-get install oracle-java8-installer -y
-sudo apt-get install oracle-java8-set-default -y
 
 # Fix for android studio emulator
 sudo apt-get install lib32stdc++6 -y
