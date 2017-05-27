@@ -47,3 +47,5 @@ sudo apt-get install tango-icon-theme
 # Turn on Anti-aliasing for smooth fonts on libre office and other non-supported apps
 SystemSettings > fonts > use anti-aliasing(Enabled) > configure...
 Sub-pixel rendering type (RGB) > Hinting (Slight)
+
+
