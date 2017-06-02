@@ -47,4 +47,5 @@ sudo apt-get install code -y
 sudo apt-get install libreoffice-gtk3 -y
 sudo apt-get install tango-icon-theme -y
 
-
+# Pip installer for python
+sudo apt-get install python-pip -y
