@@ -58,3 +58,7 @@ sudo apt-get install -y mongodb-org
 # startng mongod service
 sudo service mongod start
 
+#Installing partition manager for KDE
+sudo apt-get install partitionmanager -y
+
+
