@@ -48,4 +48,9 @@ sudo apt-get install tango-icon-theme
 SystemSettings > fonts > use anti-aliasing(Enabled) > configure...
 Sub-pixel rendering type (RGB) > Hinting (Slight)
 
-
+# Random freezes with KDE Neon LTS/ Ubuntu LTS
+# Keyboard, mouse, screen becomes unresponsive and stays that way
+sudo nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" --> GRUB_CMDLINE_LINUX_DEFAULT="quiet splash intel_idle.max_cstate=1"
+sudo update-grub
+sudo reboot
