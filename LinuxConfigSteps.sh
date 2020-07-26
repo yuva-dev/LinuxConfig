@@ -62,3 +62,10 @@ wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_6
 bzip2 -d phantomjs-2.1.1-linux-x86_64.tar.bz2
 tar -xvf phantomjs-2.1.1-linux-x86_64.tar
 sudo cp phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
+
+
+# Install boot repair for repair GRUB issues with UEFI installation
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install -y boot-repair && boot-repair
+
